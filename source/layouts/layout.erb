@@ -12,6 +12,9 @@
     <%= favicon_tag 'images/favicon.png' %>
   </head>
   <body>
+    <%= partial "layouts/navbar" %>
+    <!-- the yield will get any of the pages below (about & index .html.erb) -->
     <%= yield %>
+    <%= partial "layouts/footer" %>
   </body>
 </html>
