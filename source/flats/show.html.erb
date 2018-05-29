@@ -1,0 +1,20 @@
+<% flat = data.flats[owner] %>
+
+<div class="banner-flat" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('https://kitt.lewagon.com/placeholder/cities/london');"></div>
+<!-- Inject flat data in template -->
+
+<div class="header-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+          <p><%= flat.name %></p>
+          <h1><%= flat.description %></h1>
+          <p><%= flat.city_name %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
